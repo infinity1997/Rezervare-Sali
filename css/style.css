@@ -1,0 +1,399 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    border-top: solid 6px rgb(5, 88, 109);
+    padding: 10 200px 0 200px;
+
+    text-align: center;
+    background-image: url("../img/background.png");
+}
+
+header a {
+    color: rgb(248, 245, 242);
+    font-size: 35px;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: rgb(242, 242, 248);
+    text-decoration: none;
+}
+
+#logo {
+    text-align: right;
+    padding-right: 200px;
+}
+
+nav {
+    background-image: url("../img/background.png");
+    padding: 8px 0 8px 0;
+    margin-bottom: 80px;
+    border-bottom: solid 6px rgb(5, 88, 109);
+}
+
+nav a {
+    color: rgb(239, 239, 245);
+    font-size: 16px;
+    margin-right: 18px;
+    text-transform: capitalize;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: rgb(209, 199, 245);
+}
+
+h1 {
+    font-size: 30px;
+    color: rgb(9, 6, 37);
+    margin-bottom: 20px;
+}
+
+label {
+    min-width: 120px;
+    color: rgb(5, 88, 109);
+}
+
+[type="text"], [type="date"], [type="time"], [type="password"], select {
+    border: 1px solid #ddd;
+    color: rgb(5, 88, 109);
+    width: 180px;
+    height: 32px;
+    margin-bottom: 8px;
+    padding-left: 10px;
+    border-radius: 3px;
+}
+
+[type="submit"] {
+    margin-top: 24px;
+    background-color: rgb(5, 88, 109);
+    border: none;
+    width: 140px;
+    height: 32px;
+    color: rgb(243, 242, 247);
+    text-transform: capitalize;
+    border-radius: 3px;
+}
+
+[type="submit"]:hover {
+    background-color: rgb(11, 113, 145);
+}
+
+.current-page {
+    font-weight: bold;
+}
+
+/*.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.meniu_jos {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    background-color:rgb(5, 88, 109);
+    text-decoration-color: #ddd; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 8px 8px;
+    z-index: 1;
+}
+
+.dropdown:hover .meniu_jos {
+    display: block;
+}*/
+footer {
+    color: rgb(64, 47, 216);
+    margin-bottom: 20px;
+    clear: left;
+}
+
+.btn {
+    background-color: rgb(5, 88, 109);
+    border: none;
+    color: white;
+    padding: 10px 16px 14px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(11, 113, 145);
+    color: rgb(209, 199, 245);
+}
+
+.butoaneHome {
+    float: left;
+    width: 20%;
+    height: 300px;
+    background-color: white;
+    border: 3px solid rgb(5, 88, 109);
+    border-radius: 5px 5px;
+    color: black;
+    padding: 1% 1% 1% 1%;
+    opacity: 0.5;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 30px;
+    margin-left: 4%;
+    margin-top: 30px;
+    overflow: auto;
+}
+
+.butoaneHome:hover {
+    opacity: 1;
+}
+
+.butoaneHomeGuest {
+    float: left;
+    width: 24%;
+    height: 300px;
+    background-color: white;
+    border: 3px solid rgb(5, 88, 109);
+    border-radius: 5px 5px;
+    color: black;
+    padding: 1% 1% 1% 1%;
+    opacity: 0.5;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 30px;
+    margin-left: 7%;
+    margin-top: 30px;
+    overflow: auto;
+}
+
+.butoaneHomeGuest:hover {
+    opacity: 1;
+}
+
+/*design scrollbar*/
+::-webkit-scrollbar {
+    width: 7px;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-track-piece {
+    border-radius: 3px;
+    background-color: rgb(247, 253, 255);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: rgb(5, 88, 109);
+}
+
+/*Butoanele animate de pe butoaneHome*/
+.button {
+    border-radius: 4px;
+    background-color: rgb(5, 88, 109);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 140px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 30px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/*Resize window*/
+@media screen and (max-width: 1000px) {
+    header a {
+        color: rgb(248, 245, 242);
+        font-size: 25px;
+        text-decoration: none;
+    }
+
+    header div div div img {
+        width: auto;
+        height: 80px;
+    }
+
+    #logo {
+        text-align: center;
+        padding-left: 200px;
+    }
+
+    header div img {
+        width: auto;
+        height: 20px;
+    }
+
+    nav div div div .btn {
+        display: none;
+    }
+
+    nav div div div a {
+        display: none;
+    }
+
+    nav div #butonnull {
+        display: inline-block;
+    }
+
+    .butoaneHome {
+        width: 44%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .butoaneHomeGuest {
+        margin-left: 25%;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .butoaneHome {
+        margin-left: 15%;
+        width: 70%;
+    }
+
+    .butoaneHomeGuest {
+        margin-left: 15%;
+        width: 70%;
+    }
+}
+
+/*
+nu inteleg de ce nu merge(nu dispare meniul dupa ce maresc ecranul)
+
+@media screen and (min-width: 1001px){
+    #menu{
+        display: none;
+    }
+    #menu a{
+        display: none;
+    }
+}*/
+
+/* butonul meniu pentru ecranul restrins */
+#butonnull {
+    padding-right: 3%;
+    display: none;
+}
+
+.cont {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 4px;
+    background-color: rgb(248, 245, 242);
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 2px;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/*meniul pentru ecranul restrins*/
+#menu {
+    margin-right: 2%;
+    margin-left: 2%;
+    width: 96%;
+    display: none;
+    background-color: rgb(253, 253, 253);
+    padding-right: 10px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    text-align: left;
+    box-shadow: 3px 5px 10px 3px rgb(182, 182, 233);
+
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    z-index: 1;
+}
+
+.totMenu {
+    position: relative;
+}
+
+#menu a {
+    font-size: 20px;
+    border-bottom: 1px solid rgb(182, 182, 233);
+    color: #777;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 3px;
+}
+
+#menu a:hover {
+    background-color: rgb(182, 182, 233);
+}
+
+.current-page-menu-restrins {
+    background-color: #005680;
+    color: white;
+}
+
+/*design imput type="file" button*/
+::-webkit-file-upload-button {
+    margin-top: 24px;
+    background-color: rgb(5, 88, 109);
+    border: none;
+    width: 140px;
+    height: 32px;
+    color: rgb(243, 242, 247);
+    text-transform: capitalize;
+    border-radius: 3px;
+}
+
+::-webkit-file-upload-button:hover {
+    background-color: rgb(11, 113, 145);
+}
+
+.top-nav{
+    text-transform: none;
+}
